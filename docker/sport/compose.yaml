@@ -1,0 +1,19 @@
+services:
+  sport-api-dalae37-com:
+    image: ghcr.io/dalae37/sport-api-dalae37-com:latest
+    pull_policy: always
+    restart: unless-stopped
+
+    environment:
+      CACHE_TTL_SECONDS: "600"
+      TIMEZONE: Asia/Seoul
+
+    expose:
+      - "80"
+
+    networks:
+      - dalae37
+
+networks:
+  dalae37:
+    external: true

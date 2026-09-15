@@ -1,0 +1,15 @@
+.DS_Store
+.git
+.github
+.gitignore
+.env*
+.venv
+**/__pycache__
+*.py[cod]
+*.egg-info
+.pytest_cache
+.coverage
+htmlcov
+README.md
+Dockerfile
+.dockerignore
